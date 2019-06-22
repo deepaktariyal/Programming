@@ -16,7 +16,7 @@ void permute(char a[],char str[],int l,int k,int loc)
 		cout<<a<<endl;
 		return;
 	}
-	for(i=loc;i<7;i++)
+	for(i=loc;i<9;i++)
 	{
 		a[l] = str[i];
 		swap(str[i],str[loc]);
@@ -27,10 +27,10 @@ void permute(char a[],char str[],int l,int k,int loc)
 }
 int main(){
 	int k;
-	char str[] = {'s','h','i','v','a','n','i'};//,'8','9'};
+	char str[] = {'1','2','3','4','5','6','7','8','9'};
 	cin>>k;
 	char a[k+1];
-	for(int i=0;i<7;i++)
+	for(int i=0;i<9;i++)
 	{
 		a[0] = str[i];
 		swap(str[i],str[0]);
